@@ -1,0 +1,192 @@
+body {
+    background: #f5f4ef;
+    color: #252923;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.siteHeader {
+    padding: 25px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 280px;
+    padding: 10px;
+    margin: 1px;
+    border-bottom: 1px solid #c8ccc3;
+    padding-bottom: 16px;
+}
+
+.nav a {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 70px;
+    color: #39483b;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #dce5d9;
+    color: #203a2a;
+}
+
+.nav a.active {
+    background-color: #dce5d9;
+    color: #203a2a;
+}
+
+.aboutPage {
+    display: grid;
+    grid-template-columns: 1.4fr 1.2fr;
+    gap: 20px;
+    width: auto;
+    max-width: 1100px;
+    margin: 15px;
+}
+
+.cvPage {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+}
+
+
+.cvTitle {
+    border-bottom: 2px solid #55715d;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+.cvTitle h1 {
+    color: #252923;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.cvTitle p {
+    margin: 5px;
+    color: #55715d;
+}
+
+.cvSection {
+    border-bottom: 1px solid #d8ddd6;
+    padding: 15px;
+}
+
+.cvSection h2 {
+    margin: 15px;
+    color: #39483b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+}
+
+.cvSection h3 {
+    margin: 4px;
+    font-size: 1rem;
+}
+
+.cvSection p {
+    margin: 5px;
+}
+
+.cvDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+.cvDetails span {
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+
+}
+
+@media (max-width: 600px) {
+    .cvPage {
+        width: 100%;
+    }
+
+    .cvDetails {
+        gap: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cvDetails p {
+        margin: 5px;
+    }
+
+    .nav {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    body {
+  
+        background: #f5f4ef;
+        color: #252923;
+        font-family: Arial, sans-serif;
+        font-size: 17px;
+    }
+}
+
+.cvEntry {
+    display: block;
+    padding: 10px;
+}
+
+.cvEntry>div {
+    width: 100%;
+}
+
+.cvDate {
+    font-weight: bold;
+    color: #55715d;
+}
+
+.cvSection a {
+    color: #39483b;
+}
+
+h2 {
+    margin: 15px;
+    font-size: 1rem;
+}
+
+.photo img {
+    display: flex;
+    width: 80%;
+    height: 520px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .photo img {
+        margin-top: 80px;
+        width: 100%;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    background-color: #39483b;
+    color: white;
+}
+
+.footer a {
+    color: white;
+}
